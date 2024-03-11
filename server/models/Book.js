@@ -12,6 +12,7 @@ const bookSchema = new Schema({
     required: true,
   },
   // saved book id from GoogleBooks
+  // could I use a different database other than google?
   bookId: {
     type: String,
     required: true,
