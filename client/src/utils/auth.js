@@ -14,7 +14,7 @@ class AuthService {
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
   }
-
+// seems that the token is expired and I dont know how to enable
   // check if token is expired
   isTokenExpired(token) {
     try {
@@ -45,5 +45,5 @@ class AuthService {
     window.location.assign('/');
   }
 }
-
+//the application failed due to problems here
 export default new AuthService();
